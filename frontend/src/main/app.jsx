@@ -1,10 +1,16 @@
 import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../../node_modules/font-awesome/css/font-awesome.min.css'
+import { HashRouter } from 'react-router-dom'
 
 import React from 'react'
+import Menu from '../template/menu'
+import Routes from './routes'
 
 export default props => (
-    <div className='container'>
-        <h1>Teste</h1>
-    </div>
+    <HashRouter>
+        <div className='container'>
+            <Menu />
+            <Routes />
+        </div>
+    </HashRouter>
 )
